@@ -9,21 +9,13 @@ const validatePassword = (password) => {
   var upperCase = /[A-Z]/g
   var lowerCase = /[a-z]/g
   var characters = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]/
+  var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-  if (password < upperCase) {
-    return true
-  }
-  if (password < lowerCase) {
-    return true
-  }
-  if (password.length <= 8) {
+  if (password > ((numbers, upperCase, lowerCase, characters) + 1)) {
     return false
-  }
-  if (password < characters) {
-    return true
   }
   else {
-    return false
+    return true
   }
 }
 
