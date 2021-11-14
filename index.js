@@ -14,6 +14,7 @@ const validatePassword = (password) => {
   let hasLower = false
 
   console.log('staring the loop')
+
   for (let i = 0; i < passArray.length; i++) {
     const char = passArray[i]
 
@@ -73,6 +74,3 @@ console.log('Is SpecialChar:', checkSpecial(string))
 
 
 module.exports = validatePassword
-
-
-
