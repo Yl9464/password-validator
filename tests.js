@@ -39,5 +39,3 @@ describe('validatePassword', () => {
     expect(valid).to.equal(false)
   })
 })
-
-
